@@ -91,8 +91,8 @@
                   </v-card-subtitle>
 
                   <v-card-actions :style="xs||sm||md?{'padding': '0','min-height': '0','height':'2.5rem'}:{'min-height': '0','height':'2.8rem'}">
-                    <v-btn :href="item.url"
-                    target="_blank"
+                    <v-btn 
+                      @click="openProjectDialog(item)"
                       :text= "item.go"
                     ></v-btn>
                     <v-spacer></v-spacer>
@@ -114,6 +114,36 @@
             </v-row>
           </v-container>
           
+          <!-- 项目详情弹窗 -->
+          <v-dialog v-model="projectDialog" :max-width="xs || sm ? '100%' : '800px'">
+            <v-card v-if="currentProject" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px);">
+              <v-toolbar color="transparent" density="compact">
+                <v-toolbar-title class="text-h6" style="font-weight: bold; color: var(--leleo-vcard-color);">
+                  {{ currentProject.title }}
+                </v-toolbar-title>
+                <v-spacer></v-spacer>
+                <v-btn icon="mdi-close" @click="projectDialog = false" color="var(--leleo-vcard-color)"></v-btn>
+              </v-toolbar>
+              <v-card-text style="padding: 16px; max-height: 80vh; overflow-y: auto;">
+                <div v-if="currentProject.detailType === 'image'" class="d-flex flex-column align-center">
+                  <v-img 
+                    v-for="(imgSrc, idx) in currentProject.detailData" 
+                    :key="idx"
+                    :src="imgSrc"
+                    class="mb-4"
+                    style="width: 100%; border-radius: 8px;"
+                  ></v-img>
+                </div>
+                <div v-else-if="currentProject.detailType === 'iframe'" style="width: 100%; height: 75vh;">
+                  <iframe :src="currentProject.detailData[0]" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
+                </div>
+                <div v-else class="text-center py-4">
+                  暂无详细内容
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-dialog>
+
         </div>       
       </div>
 </template> 
@@ -130,6 +160,8 @@ export default {
     props: ['configdata','formattedTime','formattedDate','projectcards'],
 	data() {
 		return {
+			projectDialog: false,
+			currentProject: null,
 			searchQuery: '',
 			selectedEngine: { title: 'Bing', value: 'bing' },
       		searchEngines :[
@@ -152,6 +184,14 @@ export default {
 		}
 	},
     methods:{
+      openProjectDialog(item) {
+        if (item.detailType === 'link' && item.detailData && item.detailData.length > 0) {
+          window.open(item.detailData[0], '_blank');
+        } else {
+          this.currentProject = item;
+          this.projectDialog = true;
+        }
+      },
       projectcardsShow(key){
         for(let i = 0;i < this.projectcards.length;i++){
           if(i != key){

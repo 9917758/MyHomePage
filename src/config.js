@@ -138,8 +138,43 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
-		{ go: "🚀 前往", img: "/img/sunshine.jpg", title: "Project 1", subtitle: "1,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗂️ 前往", img: "/img/sunshine.jpg", title: "Project 2", subtitle: "2,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
+		{ 
+			go: "✨ 查看详情", 
+			img: "/img/sunshine.jpg", 
+			title: "Project 1: 某某产品原型", 
+			subtitle: "产品设计 / 交互体验", 
+			text: "该项目主要从0到1负责了某业务模块的原型设计，主要产出物为产品原型与交互设计。点击查看设计详情。", 
+			show: false,
+			detailType: 'image', // 弹窗类型：'image' 或 'iframe'
+			detailData: [
+				"/img/sunshine.jpg", // 此处请替换为你的产品原型长图路径
+				"/img/avatar.jpg"
+			]
+		},
+		{ 
+			go: "🗂️ 查阅文档", 
+			img: "/img/sunshine.jpg", 
+			title: "Project 2: 软件需求与改进方案", 
+			subtitle: "需求分析 / 方案输出", 
+			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。", 
+			show: false,
+			detailType: 'image',
+			detailData: [
+				"/img/sunshine.jpg" // 此处请替换为你的PRD截图或PPT导出的图片路径
+			]
+		},
+		{ 
+			go: "🌐 浏览网页", 
+			img: "/img/image3.png", 
+			title: "Project 3: 数字新闻网页", 
+			subtitle: "网页设计 / 交互开发", 
+			text: "这是一个关于数字新闻的Web项目，实现了信息的可视化与动态交互展示。", 
+			show: false,
+			detailType: 'link',
+			detailData: [
+				"https://city-folding-6wskre0kt-9917758s-projects.vercel.app"
+			]
+		},
 	],
 
 	statement: ["备案号：XXICP备123456789号", "Copyright © 2025 Leleo"],
