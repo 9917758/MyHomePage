@@ -134,6 +134,37 @@
                     style="width: 100%; border-radius: 8px;"
                   ></v-img>
                 </div>
+                <div v-else-if="currentProject.detailType === 'split'">
+                  <v-row>
+                    <v-col cols="12" md="8" class="d-flex flex-column align-center">
+                      <v-img 
+                        v-for="(imgSrc, idx) in currentProject.detailData.images" 
+                        :key="idx"
+                        :src="imgSrc"
+                        class="mb-4"
+                        style="width: 100%; border-radius: 8px;"
+                      ></v-img>
+                    </v-col>
+                    <v-col cols="12" md="4" class="d-flex flex-column align-center pt-md-4">
+                      <v-card variant="outlined" style="border-radius: 8px; width: 100%; background-color: rgba(255,255,255,0.5);">
+                        <v-card-text class="text-center">
+                          <v-icon icon="mdi-file-word" size="64" color="blue-darken-2" class="mb-2"></v-icon>
+                          <div class="text-h6 mb-2" style="color: var(--leleo-vcard-color);">需求文档原件</div>
+                          <div class="text-caption mb-4" style="color: var(--leleo-vcard-color);">{{ currentProject.detailData.document.name }}</div>
+                          <v-btn 
+                            color="primary" 
+                            prepend-icon="mdi-download"
+                            :href="currentProject.detailData.document.path"
+                            target="_blank"
+                            download
+                          >
+                            点击下载/查看
+                          </v-btn>
+                        </v-card-text>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </div>
                 <div v-else-if="currentProject.detailType === 'iframe'" style="width: 100%; height: 75vh;">
                   <iframe :src="currentProject.detailData[0]" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
                 </div>

@@ -141,14 +141,13 @@ const config = {
 		{ 
 			go: "✨ 查看详情", 
 			img: "/img/sunshine.jpg", 
-			title: "Project 1: 某某产品原型", 
+			title: "Project 1: “摄交”APP 原型设计", 
 			subtitle: "产品设计 / 交互体验", 
-			text: "该项目主要从0到1负责了某业务模块的原型设计，主要产出物为产品原型与交互设计。点击查看设计详情。", 
+			text: "该项目主要从0到1负责了核心业务模块的原型设计，主要产出物为高保真产品原型与交互逻辑设计。点击查看完整在线原型演示。", 
 			show: false,
-			detailType: 'image', // 弹窗类型：'image' 或 'iframe'
+			detailType: 'iframe',
 			detailData: [
-				"/img/sunshine.jpg", // 此处请替换为你的产品原型长图路径
-				"/img/avatar.jpg"
+				"/shejiao-proto/总览模式.html"
 			]
 		},
 		{ 
@@ -158,10 +157,16 @@ const config = {
 			subtitle: "需求分析 / 方案输出", 
 			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。", 
 			show: false,
-			detailType: 'image',
-			detailData: [
-				"/img/sunshine.jpg" // 此处请替换为你的PRD截图或PPT导出的图片路径
-			]
+			detailType: 'split',
+			detailData: {
+				images: [
+					"/img/sunshine.jpg"
+				],
+				document: {
+					name: "中通快递小程序功能综合优化需求说明书.docx",
+					path: "/docs/中通快递小程序功能综合优化需求说明书.docx"
+				}
+			}
 		},
 		{ 
 			go: "🌐 浏览网页", 
