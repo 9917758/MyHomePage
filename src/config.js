@@ -22,7 +22,7 @@ const config = {
 	blur: 5, // 毛玻璃模糊效果
 
 	// 我的标签
-	tags: ['AI产品规划', '竞品与行业分析', '用户体验', 'Agent智能体', '数据分析', 'Prompt工程', '商业化策略', 'Axure交互'],
+	tags: ['需求分析', '用户洞察', '原型设计', 'PRD撰写', '数据驱动', '商业化策略', '跨部门协作'],
 
 	// 默认背景壁纸
 	background: {
@@ -45,11 +45,15 @@ const config = {
 
 	},
 
-	//极坐标图数据
-	polarChart: {
-		skills: ['需求分析', '原型设计', '产品规划', '项目管理', '竞品分析', '用户体验', '数据分析', '敏捷开发'],
-		skillPoints: [90, 85, 88, 85, 80, 85, 75, 80],
-	},
+	// 工具悬浮墙数据 (可在此处修改坐标、大小、模糊度以及使用的图片)
+	toolsCloud: [
+		{ name: "Figma", img: "/img/avatar.jpg", size: 60, top: 10, left: 15, blur: 0 },
+		{ name: "Axure", img: "/img/image1.png", size: 45, top: 20, left: 60, blur: 2 },
+		{ name: "墨刀", img: "/img/image2.png", size: 50, top: 60, left: 10, blur: 1 },
+		{ name: "Cursor", img: "/img/image3.png", size: 70, top: 50, left: 45, blur: 0 },
+		{ name: "MySQL", img: "/img/sunshine.jpg", size: 35, top: 75, left: 75, blur: 3 },
+		{ name: "Xmind", img: "/img/My-photo.jpg", size: 55, top: 10, left: 85, blur: 1 }
+	],
 
 	//社交按钮
 	socialPlatformIcons: [
@@ -60,10 +64,8 @@ const config = {
 
 	//打字机
 	typeWriterStrings: [
-		"如果你看到了这行字，说明我已经成功吸引到了你的注意力。",
-		"顶峰的少年，给了你所有细节，你却说我不是迪迦，给不了你想要的光。",
-		"心简单，世界就简单，幸福才会生长；心自由，生活就自由，到哪都有快乐。",
-		"生命太短，没有时间留给遗憾，若不是终点，请微笑一直向前。"
+		"ENTJ快乐产品选手，有c端产品和0-1项目孵化经历",
+		"外向擅协作，满怀热忱深耕产品领域"
 	],
 
 	//音乐播放配置，采用MetingJS Api(https://github.com/metowolf/MetingJS)

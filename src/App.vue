@@ -71,7 +71,7 @@
                 </v-card>
 
                 <div class="leleo-left-chart">
-                    <polarchart :style="xs||sm?{'height':'210px'}:{'height':'270px'}"/>
+                    <toolscloud :style="xs||sm?{'height':'210px'}:{'height':'270px'}"/>
                 </div>
 
                 <v-container class="leleo-left-socialIconsContainer">
