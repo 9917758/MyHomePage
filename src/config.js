@@ -47,18 +47,18 @@ const config = {
 
 	// 工具悬浮墙数据 (可在此处修改坐标、大小、模糊度以及使用的图片)
 	toolsCloud: [
-		{ name: "Figma", img: "/img/avatar.jpg", size: 65, top: 35, left: 35, blur: 0 },
-		{ name: "Axure", img: "/img/image1.png", size: 45, top: 25, left: 55, blur: 1 },
+		{ name: "Figma", img: "/img/tool-icons/figma.png", size: 65, top: 35, left: 35, blur: 0 },
+		{ name: "Axure", img: "/img/tool-icons/axure.png", size: 45, top: 25, left: 55, blur: 1 },
 		{ name: "Coze", img: "/img/image2.png", size: 55, top: 50, left: 25, blur: 0.5 },
-		{ name: "Cursor", img: "/img/image3.png", size: 70, top: 45, left: 65, blur: 0 },
+		{ name: "Cursor", img: "/img/tool-icons/cursor.png", size: 70, top: 45, left: 65, blur: 0 },
 		{ name: "Dify", img: "/img/sunshine.jpg", size: 40, top: 70, left: 40, blur: 1.5 },
 		{ name: "Xmind", img: "/img/My-photo.jpg", size: 55, top: 65, left: 70, blur: 0.5 },
 		{ name: "SQL", img: "/img/avatar.jpg", size: 40, top: 20, left: 35, blur: 1 },
 		{ name: "Python", img: "/img/image1.png", size: 50, top: 80, left: 55, blur: 0.5 },
 		{ name: "Midjourney", img: "/img/image2.png", size: 35, top: 55, left: 80, blur: 1 },
 		{ name: "Jira", img: "/img/image3.png", size: 45, top: 40, left: 15, blur: 1.5 },
-		{ name: "Claude", img: "/img/sunshine.jpg", size: 50, top: 15, left: 70, blur: 2 },
-		{ name: "ChatGPT", img: "/img/My-photo.jpg", size: 60, top: 80, left: 25, blur: 1 }
+		{ name: "Claude", img: "/img/tool-icons/claude.png", size: 50, top: 15, left: 70, blur: 2 },
+		{ name: "ChatGPT", img: "/img/tool-icons/chatgpt.png", size: 60, top: 80, left: 25, blur: 1 }
 	],
 
 	//社交按钮

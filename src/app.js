@@ -11,7 +11,7 @@ import { useDisplay } from 'vuetify'
 
 export default {
   components: {
-    tab1,tab2,tab3,loader,homeright,typewriter,toolscloud
+    tab1,tab2,loader,homeright,typewriter,toolscloud
   },
   setup() {
     const { xs,sm,md } = useDisplay();
