@@ -7,7 +7,7 @@ const config = {
 		icon: '/favicon.ico'   //网页图标，支持外链
 	},
 
-	avatar: "/img/avatar.jpg", // 头像
+	avatar: "/img/My-photo.jpg", // 头像
 	welcometitle: "Hi, I'm 黄晓晗", // 标题
 
 	// 颜色配置
@@ -22,7 +22,7 @@ const config = {
 	blur: 5, // 毛玻璃模糊效果
 
 	// 我的标签
-	tags: ['乐观开朗', '温柔体贴', '随和亲切', '冷静沉着', '才思敏捷', '风趣幽默', '刚正不阿', '善解人意'],
+	tags: ['Figma设计', 'Axure交互', '墨刀原型', 'AI大模型应用', 'Prompt工程', 'Agent智能体', '数据分析', 'MySQL'],
 
 	// 默认背景壁纸
 	background: {
@@ -141,7 +141,7 @@ const config = {
 		{ 
 			go: "✨ 查看详情", 
 			img: "/img/image1.png", 
-			title: "Project 1: “摄交”APP 原型设计", 
+			title: "Project 1: “摄交”APP 原型", 
 			subtitle: "产品设计 / 交互体验", 
 			text: "该项目主要从0到1负责了核心业务模块的原型设计，主要产出物为高保真产品原型与交互逻辑设计。点击查看完整在线原型演示。", 
 			show: false,
@@ -153,25 +153,19 @@ const config = {
 		{ 
 			go: "🗂️ 查阅文档", 
 			img: "/img/image2.png", 
-			title: "Project 2: 软件需求与改进方案", 
+			title: "Project 2: 用户生命周期管理", 
 			subtitle: "需求分析 / 方案输出", 
 			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。", 
 			show: false,
-			detailType: 'split',
-			detailData: {
-				images: [
-					"/img/sunshine.jpg"
-				],
-				document: {
-					name: "中通快递小程序功能综合优化需求说明书.docx",
-					path: "/docs/中通快递小程序功能综合优化需求说明书.docx"
-				}
-			}
+			detailType: 'iframe',
+			detailData: [
+				"/docs/用户生命周期管理.pdf"
+			]
 		},
 		{ 
 			go: "🌐 浏览网页", 
 			img: "/img/image3.png", 
-			title: "Project 3: 数字新闻网页", 
+			title: "Project 3: 数据可视化", 
 			subtitle: "网页设计 / 交互开发", 
 			text: "这是一个关于数字新闻的Web项目，实现了信息的可视化与动态交互展示。", 
 			show: false,
