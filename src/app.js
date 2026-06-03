@@ -27,6 +27,8 @@ export default {
       configdata: config,
       dialog1: false,
       dialog2: false,
+      showQrDialog: false,
+      qrImgUrl: '',
       personalizedtags: null,
       videosrc: '',
       ismusicplayer: false,
@@ -255,6 +257,12 @@ export default {
           item.show = false;
         }
       })
+    },
+    handleSocialClick(item) {
+      if (item.type === 'dialog') {
+        this.qrImgUrl = item.value;
+        this.showQrDialog = true;
+      }
     },
     handleCancel(){
       this.dialog1 = false;

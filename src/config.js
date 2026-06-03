@@ -53,12 +53,9 @@ const config = {
 
 	//社交按钮
 	socialPlatformIcons: [
-		{ icon: "mdi-github", link: "https://www.github.com/leleo886" },
-		{ icon: "mdi-email", link: "mailto:leleo886@foxmail.com" },
-		{ icon: "mdi-qqchat", link: "https://im.qq.com/" },
-		{ icon: "mdi-wechat", link: "https://wx.qq.com/" },
-		{ icon: "mdi-youtube", link: "https://www.youtube.com" },
-		{ icon: "mdi-facebook", link: "https://www.facebook.com" }
+		{ icon: "mdi-email", type: "tooltip", value: "1293371504@qq.com" },
+		{ icon: "mdi-wechat", type: "dialog", value: "/img/weixin.png" },
+		{ icon: "mdi-phone", type: "tooltip", value: "13755149383" }
 	],
 
 	//打字机

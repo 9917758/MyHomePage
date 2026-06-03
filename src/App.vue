@@ -80,9 +80,14 @@
                         <v-btn :size="xs?25:33" variant="tonal" color="var(--leleo-vcard-color)"
                         class="ma-1 leleo-social-bticon"
                         icon
-                        :href="item.link" target="_blank"
+                        @click="handleSocialClick(item)"
                         >
-                    <v-icon :icon=item.icon :size="xs?20:25" class="social-bticon-icon"></v-icon></v-btn>
+                    <v-icon :icon=item.icon :size="xs?20:25" class="social-bticon-icon"></v-icon>
+                          <!-- tooltip提示框 -->
+                          <v-tooltip v-if="item.type === 'tooltip'" activator="parent" location="top">
+                            {{ item.value }}
+                          </v-tooltip>
+                    </v-btn>
                     </v-col>
                     </v-row>
 
@@ -158,6 +163,20 @@
           </template>
         </v-tabs>
       </v-card>
+      </v-dialog>
+
+      <!-- 微信二维码弹窗 -->
+      <v-dialog v-model="showQrDialog" max-width="400">
+        <v-card style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px);">
+          <v-toolbar color="transparent" density="compact">
+            <v-toolbar-title class="text-h6" style="font-weight: bold; color: #333333;">扫码添加微信</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn icon="mdi-close" @click="showQrDialog = false" color="#333333"></v-btn>
+          </v-toolbar>
+          <v-card-text class="d-flex justify-center pa-4">
+            <v-img :src="qrImgUrl" max-width="300" max-height="300" style="border-radius: 8px;"></v-img>
+          </v-card-text>
+        </v-card>
       </v-dialog>
 
       <v-dialog
