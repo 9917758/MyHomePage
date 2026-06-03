@@ -2,7 +2,6 @@ import homeright from '../src/components/hoemright.vue';
 import typewriter from './components/typewriter.vue';
 import tab1 from './components/tabs/tab1.vue';
 import tab2 from './components/tabs/tab2.vue';
-import tab3 from './components/tabs/tab3.vue';
 import loader from './components/loader.vue';
 import toolscloud from './components/toolscloud.vue';
 import config from './config.js';
@@ -61,13 +60,7 @@ export default {
           text: '背景预览',
           value: 'tab-2',
           component: "tab2",
-        },
-        {
-          icon: 'mdi-music-circle-outline',
-          text: '音乐播放',
-          value: 'tab-3',
-          component: "tab3",
-        },
+        }
       ],
 
     };

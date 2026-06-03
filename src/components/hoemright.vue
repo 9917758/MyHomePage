@@ -76,7 +76,7 @@
                 lg="3"
                 :style="xs?{'padding': '6px'}:{}"
               >
-                <v-card class="">
+                <v-card class="" @click="openProjectDialog(item)" style="cursor: pointer;" hover>
                   <v-img
                     aspect-ratio="1.7778"
                     :src= item.img
@@ -98,7 +98,7 @@
                     <v-spacer></v-spacer>
                     <v-btn
                       :icon="item.show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
-                      @click="item.show = !item.show;projectcardsShow(key);"
+                      @click.stop="item.show = !item.show;projectcardsShow(key);"
                     ></v-btn>
                   </v-card-actions>
                   <v-expand-transition>

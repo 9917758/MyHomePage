@@ -47,18 +47,18 @@ const config = {
 
 	// 工具悬浮墙数据 (可在此处修改坐标、大小、模糊度以及使用的图片)
 	toolsCloud: [
-		{ name: "Figma", img: "/img/avatar.jpg", size: 60, top: 35, left: 35, blur: 0 },
-		{ name: "Axure", img: "/img/image1.png", size: 45, top: 25, left: 55, blur: 2 },
-		{ name: "墨刀", img: "/img/image2.png", size: 50, top: 50, left: 25, blur: 1 },
+		{ name: "Figma", img: "/img/avatar.jpg", size: 65, top: 35, left: 35, blur: 0 },
+		{ name: "Axure", img: "/img/image1.png", size: 45, top: 25, left: 55, blur: 1 },
+		{ name: "Coze", img: "/img/image2.png", size: 55, top: 50, left: 25, blur: 0.5 },
 		{ name: "Cursor", img: "/img/image3.png", size: 70, top: 45, left: 65, blur: 0 },
-		{ name: "MySQL", img: "/img/sunshine.jpg", size: 35, top: 70, left: 40, blur: 3 },
-		{ name: "Xmind", img: "/img/My-photo.jpg", size: 55, top: 65, left: 70, blur: 1 },
-		{ name: "SQL", img: "/img/avatar.jpg", size: 40, top: 20, left: 35, blur: 2 },
-		{ name: "Python", img: "/img/image1.png", size: 50, top: 80, left: 55, blur: 1 },
-		{ name: "Visio", img: "/img/image2.png", size: 35, top: 55, left: 80, blur: 2 },
-		{ name: "Jira", img: "/img/image3.png", size: 45, top: 40, left: 15, blur: 3 },
-		{ name: "Confluence", img: "/img/sunshine.jpg", size: 30, top: 15, left: 70, blur: 4 },
-		{ name: "Tableau", img: "/img/My-photo.jpg", size: 40, top: 80, left: 25, blur: 2 }
+		{ name: "Dify", img: "/img/sunshine.jpg", size: 40, top: 70, left: 40, blur: 1.5 },
+		{ name: "Xmind", img: "/img/My-photo.jpg", size: 55, top: 65, left: 70, blur: 0.5 },
+		{ name: "SQL", img: "/img/avatar.jpg", size: 40, top: 20, left: 35, blur: 1 },
+		{ name: "Python", img: "/img/image1.png", size: 50, top: 80, left: 55, blur: 0.5 },
+		{ name: "Midjourney", img: "/img/image2.png", size: 35, top: 55, left: 80, blur: 1 },
+		{ name: "Jira", img: "/img/image3.png", size: 45, top: 40, left: 15, blur: 1.5 },
+		{ name: "Claude", img: "/img/sunshine.jpg", size: 50, top: 15, left: 70, blur: 2 },
+		{ name: "ChatGPT", img: "/img/My-photo.jpg", size: 60, top: 80, left: 25, blur: 1 }
 	],
 
 	//社交按钮
@@ -84,26 +84,25 @@ const config = {
 	//壁纸数据 -----可以将壁纸文件上传到图床获取网络直链。若想调用api，请前往脚本自行修改逻辑
 	wallpaper: {
 		pic: [
+			{ "title": "自定义壁纸1", "preview": "/img/wallpaper/1.jpg", "url": "/img/wallpaper/1.jpg" },
+			{ "title": "自定义壁纸2", "preview": "/img/wallpaper/2.jpg", "url": "/img/wallpaper/2.jpg" },
+			{ "title": "自定义壁纸3", "preview": "/img/wallpaper/3.jpg", "url": "/img/wallpaper/3.jpg" },
+			{ "title": "自定义壁纸4", "preview": "/img/wallpaper/4.jpg", "url": "/img/wallpaper/4.jpg" },
 			{ "title": "海洋女孩", "preview": "/img/wallpaper/static/海洋女孩/image-pre.webp", "url": "/img/wallpaper/static/海洋女孩/image.png" },
 			{ "title": "书房夜晚", "preview": "/img/wallpaper/static/书房夜晚/image-pre.webp", "url": "/img/wallpaper/static/书房夜晚/image.png" },
 			{ "title": "安逸舒适", "preview": "/img/wallpaper/static/安逸舒适/image-pre.webp", "url": "/img/wallpaper/static/安逸舒适/image.png" },
-			{ "title": "jswcMaMj", "preview": "https://s21.ax1x.com/2025/07/23/pVGli59.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGli59.jpg" },
-			{ "title": "pgtTqoqq", "preview": "https://s21.ax1x.com/2025/07/23/pVGlmDO.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlmDO.jpg" },
-			{ "title": "cvKMKhue", "preview": "https://s21.ax1x.com/2025/07/23/pVGlNqS.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlNqS.jpg" },
-			{ "title": "XpxvQVoP", "preview": "https://s21.ax1x.com/2025/07/23/pVGlfIJ.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlfIJ.jpg" },
-			{ "title": "fVEEjEOA", "preview": "https://s21.ax1x.com/2025/07/23/pVGlEgx.md.webp", "url": "https://s21.ax1x.com/2025/07/23/pVGlEgx.webp" },
-			{ "title": "jgnIKMpd", "preview": "https://s21.ax1x.com/2025/07/23/pVGldaQ.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGldaQ.jpg" },
-			{ "title": "mgqyySeh", "preview": "https://s21.ax1x.com/2025/07/23/pVGl82t.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGl82t.jpg" },
-			{ "title": "dSXZfZp", "preview": "https://s21.ax1x.com/2025/07/23/pVGlaVg.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlaVg.jpg" },
+
 		],
 		picMobile: [
+			{ "title": "自定义壁纸1", "preview": "/img/wallpaper/1.jpg", "url": "/img/wallpaper/1.jpg" },
+			{ "title": "自定义壁纸2", "preview": "/img/wallpaper/2.jpg", "url": "/img/wallpaper/2.jpg" },
+			{ "title": "自定义壁纸3", "preview": "/img/wallpaper/3.jpg", "url": "/img/wallpaper/3.jpg" },
+			{ "title": "自定义壁纸4", "preview": "/img/wallpaper/4.jpg", "url": "/img/wallpaper/4.jpg" },
 			{ "title": "0001", "preview": "/img/wallpaper/static-mobile/0001/image-pre.webp", "url": "/img/wallpaper/static-mobile/0001/image.png" },
 			{ "title": "0002", "preview": "/img/wallpaper/static-mobile/0002/image-pre.webp", "url": "/img/wallpaper/static-mobile/0002/image.png" },
 			{ "title": "0003", "preview": "/img/wallpaper/static-mobile/0003/image-pre.webp", "url": "/img/wallpaper/static-mobile/0003/image.png" },
 			{ "title": "0004", "preview": "/img/wallpaper/static-mobile/0004/image-pre.webp", "url": "/img/wallpaper/static-mobile/0004/image.png" },
-			{ "title": "DfNHPPcc", "preview": "https://s21.ax1x.com/2025/07/23/pVG1uQ0.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVG1uQ0.jpg" },
-			{ "title": "cZZwzhis", "preview": "https://s21.ax1x.com/2025/07/23/pVG1Vij.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVG1Vij.jpg" },
-			{ "title": "aANKZHPX", "preview": "https://s21.ax1x.com/2025/07/23/pVGlIR1.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlIR1.jpg" },
+
 		],
 		video: [
 			{
