@@ -65,7 +65,7 @@ const config = {
 	socialPlatformIcons: [
 		{ icon: "mdi-email", type: "tooltip", value: "1293371504@qq.com" },
 		{ icon: "mdi-wechat", type: "dialog", value: "/img/weixin.png" },
-		{ icon: "mdi-phone", type: "tooltip", value: "13755149383" }
+		{ icon: "mdi-phone", type: "tooltip", value: "13932748300" }
 	],
 
 	//打字机
@@ -148,7 +148,7 @@ const config = {
 			img: "/img/image1.png",
 			title: "Project 1: “摄交”APP 原型",
 			subtitle: "产品设计 / 交互体验",
-			text: "该项目主要从0到1负责了核心业务模块的原型设计，主要产出物为高保真产品原型与交互逻辑设计。点击查看完整在线原型演示。",
+			text: "该项目为个人项目，从零到一策划垂直摄影社交平台，主要产出物为PRD文档和高保真产品原型。点击详情查看完整原型演示。",
 			show: false,
 			detailType: 'iframe',
 			detailData: [
@@ -158,13 +158,13 @@ const config = {
 		{
 			go: "🗂️ 查阅文档",
 			img: "/img/image2.png",
-			title: "Project 2: 用户生命周期管理",
+			title: "Project 2: 用户全生命周期管理",
 			subtitle: "需求分析 / 方案输出",
-			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。",
+			text: "实习期间围绕提升会员页面触达率与商城积分核销率的目标，梳理体验断点与流失漏斗，输出结构化产品策划方案。",
 			show: false,
 			detailType: 'iframe',
 			detailData: [
-				"/docs/用户生命周期管理.pdf"
+				"/docs/用户全生命周期管理.pdf"
 			]
 		},
 		{
