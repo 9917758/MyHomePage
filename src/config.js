@@ -140,7 +140,7 @@ const config = {
 	projectcards: [
 		{ 
 			go: "✨ 查看详情", 
-			img: "/img/sunshine.jpg", 
+			img: "/img/image1.png", 
 			title: "Project 1: “摄交”APP 原型设计", 
 			subtitle: "产品设计 / 交互体验", 
 			text: "该项目主要从0到1负责了核心业务模块的原型设计，主要产出物为高保真产品原型与交互逻辑设计。点击查看完整在线原型演示。", 
@@ -152,7 +152,7 @@ const config = {
 		},
 		{ 
 			go: "🗂️ 查阅文档", 
-			img: "/img/sunshine.jpg", 
+			img: "/img/image2.png", 
 			title: "Project 2: 软件需求与改进方案", 
 			subtitle: "需求分析 / 方案输出", 
 			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。", 

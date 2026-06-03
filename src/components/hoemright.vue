@@ -115,14 +115,14 @@
           </v-container>
           
           <!-- 项目详情弹窗 -->
-          <v-dialog v-model="projectDialog" :max-width="xs || sm ? '100%' : '800px'">
+          <v-dialog v-model="projectDialog" :max-width="xs || sm ? '100%' : '1200px'">
             <v-card v-if="currentProject" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px);">
               <v-toolbar color="transparent" density="compact">
-                <v-toolbar-title class="text-h6" style="font-weight: bold; color: var(--leleo-vcard-color);">
+                <v-toolbar-title class="text-h6" style="font-weight: bold; color: #333333;">
                   {{ currentProject.title }}
                 </v-toolbar-title>
                 <v-spacer></v-spacer>
-                <v-btn icon="mdi-close" @click="projectDialog = false" color="var(--leleo-vcard-color)"></v-btn>
+                <v-btn icon="mdi-close" @click="projectDialog = false" color="#333333"></v-btn>
               </v-toolbar>
               <v-card-text style="padding: 16px; max-height: 80vh; overflow-y: auto;">
                 <div v-if="currentProject.detailType === 'image'" class="d-flex flex-column align-center">
@@ -165,7 +165,7 @@
                     </v-col>
                   </v-row>
                 </div>
-                <div v-else-if="currentProject.detailType === 'iframe'" style="width: 100%; height: 75vh;">
+                <div v-else-if="currentProject.detailType === 'iframe'" style="width: 100%; height: 85vh;">
                   <iframe :src="currentProject.detailData[0]" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
                 </div>
                 <div v-else class="text-center py-4">
