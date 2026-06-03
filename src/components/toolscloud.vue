@@ -45,12 +45,15 @@ export default {
 .cloud-container {
   position: relative;
   width: 100%;
+  min-width: 260px; /* 强制提供一个保底宽度，防止 Flex 布局将其压缩至 0 */
   height: 100%;
+  margin: 0 auto;
 }
 
 .cloud-item-wrapper {
   position: absolute;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: float 4s ease-in-out infinite;
   cursor: pointer;
@@ -70,14 +73,14 @@ export default {
   opacity: 1 !important;
   z-index: 20 !important;
   animation-play-state: paused;
-  transform: scale(1.4);
+  transform: translate(-50%, -50%) scale(1.4);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   border: 2px solid var(--leleo-welcomtitle-color, #FFF);
 }
 
 @keyframes float {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(3deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0% { transform: translate(-50%, calc(-50% + 0px)) rotate(0deg); }
+  50% { transform: translate(-50%, calc(-50% - 15px)) rotate(3deg); }
+  100% { transform: translate(-50%, calc(-50% + 0px)) rotate(0deg); }
 }
 </style>

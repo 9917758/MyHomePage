@@ -47,12 +47,18 @@ const config = {
 
 	// 工具悬浮墙数据 (可在此处修改坐标、大小、模糊度以及使用的图片)
 	toolsCloud: [
-		{ name: "Figma", img: "/img/avatar.jpg", size: 60, top: 10, left: 15, blur: 0 },
-		{ name: "Axure", img: "/img/image1.png", size: 45, top: 20, left: 60, blur: 2 },
-		{ name: "墨刀", img: "/img/image2.png", size: 50, top: 60, left: 10, blur: 1 },
-		{ name: "Cursor", img: "/img/image3.png", size: 70, top: 50, left: 45, blur: 0 },
-		{ name: "MySQL", img: "/img/sunshine.jpg", size: 35, top: 75, left: 75, blur: 3 },
-		{ name: "Xmind", img: "/img/My-photo.jpg", size: 55, top: 10, left: 85, blur: 1 }
+		{ name: "Figma", img: "/img/avatar.jpg", size: 60, top: 35, left: 35, blur: 0 },
+		{ name: "Axure", img: "/img/image1.png", size: 45, top: 25, left: 55, blur: 2 },
+		{ name: "墨刀", img: "/img/image2.png", size: 50, top: 50, left: 25, blur: 1 },
+		{ name: "Cursor", img: "/img/image3.png", size: 70, top: 45, left: 65, blur: 0 },
+		{ name: "MySQL", img: "/img/sunshine.jpg", size: 35, top: 70, left: 40, blur: 3 },
+		{ name: "Xmind", img: "/img/My-photo.jpg", size: 55, top: 65, left: 70, blur: 1 },
+		{ name: "SQL", img: "/img/avatar.jpg", size: 40, top: 20, left: 35, blur: 2 },
+		{ name: "Python", img: "/img/image1.png", size: 50, top: 80, left: 55, blur: 1 },
+		{ name: "Visio", img: "/img/image2.png", size: 35, top: 55, left: 80, blur: 2 },
+		{ name: "Jira", img: "/img/image3.png", size: 45, top: 40, left: 15, blur: 3 },
+		{ name: "Confluence", img: "/img/sunshine.jpg", size: 30, top: 15, left: 70, blur: 4 },
+		{ name: "Tableau", img: "/img/My-photo.jpg", size: 40, top: 80, left: 25, blur: 2 }
 	],
 
 	//社交按钮
@@ -137,36 +143,36 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
-		{ 
-			go: "✨ 查看详情", 
-			img: "/img/image1.png", 
-			title: "Project 1: “摄交”APP 原型", 
-			subtitle: "产品设计 / 交互体验", 
-			text: "该项目主要从0到1负责了核心业务模块的原型设计，主要产出物为高保真产品原型与交互逻辑设计。点击查看完整在线原型演示。", 
+		{
+			go: "✨ 查看详情",
+			img: "/img/image1.png",
+			title: "Project 1: “摄交”APP 原型",
+			subtitle: "产品设计 / 交互体验",
+			text: "该项目主要从0到1负责了核心业务模块的原型设计，主要产出物为高保真产品原型与交互逻辑设计。点击查看完整在线原型演示。",
 			show: false,
 			detailType: 'iframe',
 			detailData: [
 				"/shejiao-proto/总览模式.html"
 			]
 		},
-		{ 
-			go: "🗂️ 查阅文档", 
-			img: "/img/image2.png", 
-			title: "Project 2: 用户生命周期管理", 
-			subtitle: "需求分析 / 方案输出", 
-			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。", 
+		{
+			go: "🗂️ 查阅文档",
+			img: "/img/image2.png",
+			title: "Project 2: 用户生命周期管理",
+			subtitle: "需求分析 / 方案输出",
+			text: "实习期间产出的核心PRD文档与项目改进PPT汇报方案。全面展示了需求拆解和痛点分析能力。",
 			show: false,
 			detailType: 'iframe',
 			detailData: [
 				"/docs/用户生命周期管理.pdf"
 			]
 		},
-		{ 
-			go: "🌐 浏览网页", 
-			img: "/img/image3.png", 
-			title: "Project 3: 数据可视化", 
-			subtitle: "网页设计 / 交互开发", 
-			text: "这是一个关于数字新闻的Web项目，实现了信息的可视化与动态交互展示。", 
+		{
+			go: "🌐 浏览网页",
+			img: "/img/image3.png",
+			title: "Project 3: 数据可视化",
+			subtitle: "网页设计 / 交互开发",
+			text: "这是一个关于数字新闻的Web项目，实现了信息的可视化与动态交互展示。",
 			show: false,
 			detailType: 'link',
 			detailData: [
