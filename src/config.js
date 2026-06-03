@@ -22,24 +22,24 @@ const config = {
 	blur: 5, // 毛玻璃模糊效果
 
 	// 我的标签
-	tags: ['Figma设计', 'Axure交互', '墨刀原型', 'AI大模型应用', 'Prompt工程', 'Agent智能体', '数据分析', 'MySQL'],
+	tags: ['AI产品规划', '竞品与行业分析', '用户体验', 'Agent智能体', '数据分析', 'Prompt工程', '商业化策略', 'Axure交互'],
 
 	// 默认背景壁纸
 	background: {
 		"pc": {   //pc端
 			"type": "pic",   //"pic":静态壁纸;"video":动态壁纸
 			"datainfo": {
-				"title": "海洋女孩",
-				"preview": "/img/wallpaper/static/海洋女孩/image-pre.webp",
-				"url": "/img/wallpaper/static/海洋女孩/image.png",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
+				"title": "自定义壁纸",
+				"preview": "/img/wallpaper/3.jpg",
+				"url": "/img/wallpaper/3.jpg",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
 			},
 		},
 		"mobile": {   //移动端
 			"type": "pic",
 			"datainfo": {
-				"title": "0001",
-				"preview": "/img/wallpaper/static-mobile/0001/image-pre.webp",
-				"url": "/img/wallpaper/static-mobile/0001/image.png"  //同理，随机移动端壁纸："url":"https://t.mwm.moe/mp"
+				"title": "自定义壁纸",
+				"preview": "/img/wallpaper/3.jpg",
+				"url": "/img/wallpaper/3.jpg"  //同理，随机移动端壁纸："url":"https://t.mwm.moe/mp"
 			}
 		}
 
