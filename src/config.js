@@ -175,7 +175,7 @@ const config = {
 			show: false,
 			detailType: 'link',
 			detailData: [
-				"https://city-folding-6wskre0kt-9917758s-projects.vercel.app"
+				"https://proj3.my-home-page.xyz"
 			]
 		},
 	],
