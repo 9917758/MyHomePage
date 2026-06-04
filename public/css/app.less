@@ -61,6 +61,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        overflow-y: auto;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* 强制所有子元素不被压缩高度 */
+        & > * {
+            flex-shrink: 0;
+        }
         &-welcome{
             margin-top: 10px;
             width: 100%;
