@@ -52,7 +52,7 @@ const config = {
 		{ name: "Coze", img: "/img/tool-icons/coze.png", size: 55, top: 50, left: 25, blur: 0.5 },
 		{ name: "Cursor", img: "/img/tool-icons/cursor.png", size: 70, top: 45, left: 65, blur: 0 },
 		{ name: "Gemini", img: "/img/tool-icons/gemini.png", size: 40, top: 70, left: 40, blur: 1.5 },
-		{ name: "Xmind", img: "/img/tool-icons/xMind.png", size: 55, top: 65, left: 70, blur: 0.5 },
+		{ name: "XMind", img: "/img/tool-icons/xMind.png", size: 55, top: 65, left: 70, blur: 0.5 },
 		{ name: "SQL", img: "/img/tool-icons/SQL.png", size: 40, top: 20, left: 35, blur: 1 },
 		{ name: "Python", img: "/img/tool-icons/python.png", size: 50, top: 80, left: 55, blur: 0.5 },
 		{ name: "元宝", img: "/img/tool-icons/yuanbao.png", size: 35, top: 55, left: 80, blur: 1 },
